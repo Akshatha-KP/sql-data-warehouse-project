@@ -36,10 +36,11 @@ Develop SQL-based analytics to deliver detailed insights into
 - **Product Performance**
 - **Sales Trend**
 
+These insights empower stakeholders with key business metrics , enabling strategic decision making.
+
 ---
 
 ## License
 
 This project is licensed under the [MIT License].(LICENSE).  
 
-These insights empower stakeholders with key business metrics , enabling strategic decision making.
