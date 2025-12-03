@@ -28,3 +28,18 @@ Develop a modern data warehouse using the SQL Server to consolidate sales data, 
 ### BI : Analytics & Reporting (Data Analytics)
 
 
+#### Objective
+
+Develop SQL-based analytics to deliver detailed insights into
+
+- **Customer Behaviour**
+- **Product Performance**
+- **Sales Trend**
+
+---
+
+## License
+
+This project is licensed under the [MIT License].(LICENSE).  
+
+These insights empower stakeholders with key business metrics , enabling strategic decision making.
