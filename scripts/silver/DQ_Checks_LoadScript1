@@ -1,0 +1,38 @@
+--Checks for NULLS or duplicates in a Primary Key
+--Expectation - NO results
+
+Select 
+	cst_id, 
+	COUNT(*) as Countofcst_id  
+FROM [Datawarehouse].[bronze].[crm_cust_info]
+Group by cst_id
+Having COUNT(*) > 1 OR cst_id IS NULL
+
+
+--Check for Unwanted spaces
+--Expectation - No Results
+
+Select 
+* from [Datawarehouse].[bronze].[crm_cust_info]
+Where cst_firstname !=TRIM(cst_firstname)
+
+Select 
+* from [Datawarehouse].[bronze].[crm_cust_info]
+Where cst_lastname !=TRIM(cst_lastname)
+
+
+Select 
+* from [Datawarehouse].[bronze].[crm_cust_info]
+Where cst_gndr !=TRIM(cst_gndr)
+
+Select 
+* from [Datawarehouse].[bronze].[crm_cust_info]
+Where cst_marital_status !=TRIM(cst_marital_status)
+
+--Data Standardization and Consistency
+
+Select DISTINCT(cst_gndr) as cst_gndr from [Datawarehouse].[bronze].[crm_cust_info]
+
+
+Select DISTINCT(cst_marital_status) as cst_marital_status from [Datawarehouse].[bronze].[crm_cust_info]
+
